@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Rod Group</title>
+</head>
+<body>
+    <div id="player-container">
+        <iframe id="player" src="https://www.youtube.com/embed/balzx7DnpMQ?autoplay=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <script>
+        function onYouTubeIframeAPIReady() {
+            var player = document.getElementById('player');
+            player.width = '100vw';  // Ancho del video
+            player.height = '30vh'; // Alto del video
+            // var player = new YT.Player('player', {
+            //     videoId: 'balzx7DnpMQ',
+            //     playerVars: {
+            //         'autoplay': 1,
+            //         'loop':1,
+            //         'controls': 0,
+            //         'rel': 0,
+            //         'showinfo':0,
+            //         'modestbranding':0
+            //     }
+            // });
+        }
+    </script>
+    
+</body>
+</html>

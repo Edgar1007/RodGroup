@@ -1,0 +1,79 @@
+.contenedorCarruselesCCC{
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.CCC{
+    width: 100%;
+    position: relative !important;
+    display: flex !important;
+}
+.botonA,.botonS{
+    display: flex;
+    width: 7%;
+    align-items: center;
+    justify-content:center;
+}
+.CCGrande{
+    width: 86% !important;
+    overflow: hidden !important;
+    position: relative !important;
+    display: grid !important;
+}
+.med{
+    display: flex !important;
+    transition: transform 0.5s ease !important; /* Agrega una transición suave al desplazamiento */
+}
+.imgGrande{
+    flex: 0 0 100%;
+    height: auto !important;
+    box-sizing: border-box !important;
+}
+.imgGrande img{
+    width: 100% !important;
+    height: auto !important; 
+}
+#anteriorCC,#siguienteCC{
+    font-size: 4vw;
+    /* width: 4vw;
+    height: 4vw; */
+    /* background-color: #F5F5F5;
+    color: #000000; */
+    /* border-radius: 50%;
+    border-width: 0.01vw;
+    border-color: #E4E4E4; */
+    /* text-align: center;
+    align-items: center; */
+}
+.CCCC{
+    margin-left: 7%;
+    width: 86% !important;
+    display: flex !important;
+    justify-content:center;
+}
+.CCChico{
+    overflow: hidden !important;
+    position: relative !important;
+    display: grid !important;
+}
+.med2{
+    display: flex !important;
+    transition: transform 0.5s ease !important; /* Agrega una transición suave al desplazamiento */
+}
+.imgChica{
+    flex: 0 0 14.28%;
+    height: auto !important;
+    box-sizing: border-box !important;
+}
+.selected{
+    border-width: 2px !important;
+    border-color: #ffffff !important;
+    border-style: solid !important;
+    border-radius: 0% !important;
+}
+.imgChica img{
+    width: 100% !important;
+    height: auto !important; 
+}

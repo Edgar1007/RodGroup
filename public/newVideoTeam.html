@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Rod Group Team</title>
+</head>
+<body>
+    <div id="playerNew"></div>
+    <script>
+        function onYouTubeIframeAPIReady() {
+            var playerNew = new YT.Player('playerNew', {
+                width: '1460vw',
+                height: 'auto',
+                videoId: 'bQZadchy0JU',
+                playerVars: {
+                    'loop':1,
+                    'autoplay': 1,
+                    'controls': 0,
+                    'rel': 0,
+                    'showinfo':0,
+                }
+            });
+        }
+    </script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>

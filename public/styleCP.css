@@ -1,0 +1,21 @@
+.carrusel{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: auto;
+    width: 22vw;
+    height: 75vh;
+}
+
+.elemento{
+    flex:0 1 auto;
+    margin:50px 0px;
+    background-color: red;
+    width: 22vw;
+    min-height: 75vh;
+}
+
+.foto{
+    width: 22vw;
+    height: 75vh;
+}

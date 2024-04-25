@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel IMG</title>
+    <style>
+        .contenedorCarruselesCCC{
+            background-color: #F5F5F5;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        .CCC{
+            width: 100%;
+            position: relative !important;
+            display: flex !important;
+        }
+        .botonA,.botonS{
+            display: flex;
+            width: 7%;
+            align-items: center;
+            justify-content:center;
+        }
+        .CCGrande{
+            width: 86% !important;
+            overflow: hidden !important;
+            position: relative !important;
+            display: grid !important;
+        }
+        .med{
+            display: flex !important;
+            transition: transform 0.5s ease !important; /* Agrega una transición suave al desplazamiento */
+        }
+        .imgGrande{
+            flex: 0 0 100%;
+            height: auto !important;
+            box-sizing: border-box !important;
+        }
+        .imgGrande img{
+            width: 100% !important;
+            height: auto !important; 
+        }
+        #anteriorCC,#siguienteCC{
+            width: 4vw;
+            height: 4vw;
+            border-radius: 100%;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            border-width: 3px;
+            border-color: #E4E4E4;
+        }
+        .CCCC{
+            margin-left: 7%;
+            width: 86% !important;
+            display: flex !important;
+            justify-content:center;
+        }
+        .CCChico{
+            overflow: hidden !important;
+            position: relative !important;
+            display: grid !important;
+        }
+        .med2{
+            display: flex !important;
+            transition: transform 0.5s ease !important; /* Agrega una transición suave al desplazamiento */
+        }
+        .imgChica{
+            flex: 0 0 14.28%;
+            height: auto !important;
+            box-sizing: border-box !important;
+        }
+        .selected{
+            border-width: 2px !important;
+            border-color: #ff0000 !important;
+            border-style: solid !important;
+            border-radius: 0% !important;
+        }
+        .imgChica img{
+            width: 100% !important;
+            height: auto !important; 
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/373d278a84.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="contenedorCarruselesCCC">
+        <div class="CCC">
+
+            <div class="botonA">
+                <button id="anteriorCC"><i class="fa-solid fa-arrow-left"></i></button>
+            </div>
+            <div class="CCGrande">
+                <div class="med">
+                    <div class="imgGrande" id="Im1">
+                        <img src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/11/CC1.png" alt="ImagenRG1">
+                    </div>
+                    <div class="imgGrande" id="Im2">
+                        <img src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/11/CC2.png" alt="ImagenRG2">
+                    </div>
+                    <div class="imgGrande" id="Im3">
+                        <img src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/11/CC3.png" alt="ImagenRG3">
+                    </div>
+                    <div class="imgGrande" id="Im4">
+                        <img src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/11/CC4.png" alt="ImagenRG4">
+                    </div>
+                    <div class="imgGrande" id="Im5">
+                        <img src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/11/CC5.png" alt="ImagenRG5">
+                    </div>
+                    <div class="imgGrande" id="Im6">
+                        <img src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/11/CC6.png" alt="ImagenRG6">
+                    </div>
+                    <div class="imgGrande" id="Im7">
+                        <img src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/11/CC7.png" alt="ImagenRG7">
+                    </div>
+                    <div class="imgGrande" id="Im8">
+                        <img src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/11/CC8.png" alt="ImagenRG8">
+                    </div>
+                    <div class="imgGrande" id="Im9">
+                        <img src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/11/Rectangle-168.png" alt="ImagenRG9">
+                    </div>
+                </div>
+            </div>
+            <div class="botonS">
+                <button id="siguienteCC"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            
+        </div>
+        <br>
+        <div class="CCCC">
+            <div class="CCChico">
+                <div class="med2">
+                    <div class="imgChica selected" id="Imc1">
+                        <img src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/11/CC1.png" alt="ImagenRG1">
+                    </div>
+                    <div class="imgChica" id="Imc2">
+                        <img src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/11/CC2.png" alt="ImagenRG2">
+                    </div>
+                    <div class="imgChica" id="Imc3">
+                        <img src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/11/CC3.png" alt="ImagenRG3">
+                    </div>
+                    <div class="imgChica" id="Imc4">
+                        <img src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/11/CC4.png" alt="ImagenRG4">
+                    </div>
+                    <div class="imgChica" id="Imc5">
+                        <img src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/11/CC5.png" alt="ImagenRG5">
+                    </div>
+                    <div class="imgChica" id="Imc6">
+                        <img src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/11/CC6.png" alt="ImagenRG6">
+                    </div>
+                    <div class="imgChica" id="Imc7">
+                        <img src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/11/CC7.png" alt="ImagenRG7">
+                    </div>
+                    <div class="imgChica" id="Imc8">
+                        <img src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/11/CC8.png" alt="ImagenRG8">
+                    </div>
+                    <div class="imgChica" id="Imc9">
+                        <img src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/11/Rectangle-168.png" alt="ImagenRG9">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        const CCgrande = document.querySelector(".med");
+        const CCchico = document.querySelector(".med2");
+        const anterior = document.getElementById("anteriorCC");
+        const siguiente = document.getElementById("siguienteCC");
+        const Im1       = document.getElementById('Imc1');
+        const Im2       = document.getElementById('Imc2');
+        const Im3       = document.getElementById('Imc3');
+        const Im4       = document.getElementById('Imc4');
+        const Im5       = document.getElementById('Imc5');
+        const Im6       = document.getElementById('Imc6');
+        const Im7       = document.getElementById('Imc7');
+        const Im8       = document.getElementById('Imc8');
+        const Im9       = document.getElementById('Imc9');
+        const arrayImagesS = [Im1,Im2,Im3,Im4,Im5,Im6,Im7,Im8,Im9]
+        let BI = 0;
+        let BS = 6;
+        let posicionCC = 0;
+        let positionArray = 0;
+        let posicionCCC = 0;
+        let flagOne = 0;
+        let flagTwo = 0;
+
+        siguiente.addEventListener("click", () => {
+            if (posicionCC > -(CCgrande.children.length - 1) * 100) {
+                posicionCC -= 100;
+                CCgrande.style.transform = `translateX(${posicionCC}%)`;
+            }
+            //========Para colocar el margen de color alrededor de la imagen miniatura=======
+            positionArray += 1;
+            if(positionArray>=arrayImagesS.length){
+                positionArray=arrayImagesS.length-1;
+                flagOne = 1;
+            }
+            cambiaSelector(positionArray)
+            //==============================================================================
+            //========Para controlar el dezplazamiento del carrusel pequeno=================
+            if(positionArray>BS && positionArray<=arrayImagesS.length-1){
+                if(flagOne!=1){
+                    BI = BI+1; //mueve el limite inferior de los bordes en turno
+                    BS = BS+1; //mueve el limite superior de los bordes en turno
+                    mueveCarruselChico('ASC');
+                    flagTwo=0;
+                }
+            }
+            //==============================================================================
+        });
+
+        anterior.addEventListener("click", () => {
+            if (posicionCC < 0) {
+                posicionCC += 100;
+                CCgrande.style.transform = `translateX(${posicionCC}%)`;
+            }
+            //========Para colocar el margen de color alrededor de la imagen miniatura=======
+            positionArray -= 1;
+            if(positionArray<0){
+                positionArray=0;
+                flagTwo=1;
+            }
+            cambiaSelector(positionArray)
+            //==============================================================================
+            //========Para controlar el dezplazamiento del carrusel pequeno=================
+            if(positionArray<BI && positionArray>=0){
+                if(flagTwo!=1){
+                    BI = BI-1; //mueve el limite inferior de los bordes en turno
+                    BS = BS-1; //mueve el limite superior de los bordes en turno
+                    mueveCarruselChico('DESC')
+                    flagOne=0;
+                }
+            }
+            //==============================================================================
+        });
+
+        const cambiaSelector=(positionArray)=>{
+            for (let i = 0; i < arrayImagesS.length; i++) {
+                if (i==positionArray) {
+                    arrayImagesS[i].classList.value = 'imgChica selected'
+                }
+                else{
+                    arrayImagesS[i].classList.value = 'imgChica'
+                }
+            }
+        }
+        const mueveCarruselChico=(indicador)=>{
+            if(indicador=='ASC'){
+                if (posicionCCC > -(CCchico.children.length - 1) * 14.28) {
+                    posicionCCC -= 14.28;
+                    CCchico.style.transform = `translateX(${posicionCCC}%)`;
+                }
+            }
+            if(indicador=='DESC'){
+                if (posicionCCC < 0) {
+                    posicionCCC += 14.28;
+                    CCchico.style.transform = `translateX(${posicionCCC}%)`;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

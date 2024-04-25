@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleCV.css">
+    <script src="https://kit.fontawesome.com/373d278a84.js" crossorigin="anonymous"></script>
+    <title>Carrusel de Videos</title>
+</head>
+<body>
+  
+    <div class="content">
+        <button id="atras" class="botones"><i class="fa-solid fa-arrow-left"></i></button>
+
+        <div id="video1" class="video videoA">
+          <video autoplay loop controls>
+            <source src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/07/Plano-1.mp4"/>
+          </video>
+        </div>
+
+        <div id="video2" class="video">
+          <video autoplay loop controls>
+            <source src="https://desarrollo-por.quetzalcode.com/wp/wp-content/uploads/2023/07/Plano-2.mp4"/>
+          </video>
+        </div>
+
+        <div id="player" class="video">
+          <!-- <iframe src="https://www.youtube.com/embed/bQZadchy0JU"></iframe> -->
+        </div>
+
+        <button id="adelante" class="botones"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <script src="alternarVideos.js"></script>
+    <script>
+      function onYouTubeIframeAPIReady() {
+          var player = new YT.Player('player', {
+              width: '90vw',
+              height: '80vh',
+              videoId: 'bQZadchy0JU',
+              playerVars: {
+                  'loop':1,
+                  'autoplay': 1,
+                  'controls': 0,
+                  'rel': 0,
+                  'showinfo':0,
+              }
+          });
+      }
+  </script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+    
+</body>
+</html>

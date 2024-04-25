@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <title>Tabla Pie de Pagina Rod Group</title>
+    <style>
+      @media (min-width: 1025px){
+        .custom-table {
+          font-size: 1.5vw;
+          font-weight: 400;
+          line-height: 1vw;
+          color: white;
+          border-collapse: collapse;
+          width: 100%;
+          background-color: black;
+        }
+        .custom-table th, .custom-table td {
+          border: 2px solid black;
+          text-align: left;
+          padding: 10px;
+          font-family: 'Inter', sans-serif;
+        }
+        .custom-table th{
+          line-height:6vw;
+          font-size:1.6vw;
+          font-weight: 700;
+        }
+      }
+
+      @media (min-width:768px) and (max-width: 1024px){
+        .custom-table {
+          font-size: 2vw;
+          font-weight: 400;
+          line-height: 2.5vw;
+          color: white;
+          border-collapse: collapse;
+          width: 100%;
+          background-color: black;
+        }
+        .custom-table th, .custom-table td {
+          border: 2px solid black;
+          text-align: left;
+          padding: 10px;
+          font-family: 'Inter', sans-serif;
+        }
+        .custom-table th{
+          line-height:2vw;
+          font-size:2.5vw;
+          font-weight: 700;
+        }
+      }
+
+      @media (max-width:767px){
+        .custom-table {
+          font-size: 3.5vw;
+          font-weight: 400;
+          line-height: 5vw;
+          color: rgb(255, 255, 255);
+          border-collapse: collapse;
+          border-color: black;
+          width: 100%;
+          background-color: black;
+        }
+        .custom-table th, .custom-table td {
+          border: 2px solid black;
+          text-align: left;
+          padding:10px;
+          font-family: 'Inter', sans-serif;
+          display: block; /* Cambia a bloque en dispositivos móviles */
+          width: 100%; /* Ocupa todo el ancho disponible */
+          box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+        }
+        .custom-table th {
+          line-height: 1vw;
+          font-size: 4vw;
+          font-weight: 700;
+          padding-top: 10vw;
+          padding-bottom: 10vw;
+        }
+        .custom-table td {
+          line-height: 1vw;
+          font-size: 4vw;
+          font-weight: 100;
+        }
+      }      
+    </style>
+</head>
+<body>
+    <div id="RR">
+      <table class="custom-table">
+        <thead>
+          <tr>
+            <th>Nosotros</th>
+            <th>Proyectos</th>
+            <th>Blog</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nuestros inicios</td>
+            <td>Nuestro desarrollo</td>
+            <td>Todo</td>
+          </tr>
+          <tr>
+            <td>Etapas de desarrollo</td>
+            <td>Etapas del proyecto</td>
+            <td>Nuevo</td>
+          </tr>
+          <tr>
+            <td>Nuestra filosofía</td>
+            <td></td>
+            <td>Publicaciones</td>
+          </tr>
+          <tr>
+            <td>Nuestros proyectos</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <script>
+      const RR = document.getElementById("RR");
+      document.addEventListener("DOMContentLoaded", ()=> {
+          reconstruye = window.innerWidth;
+          reconstruir(reconstruye);
+      });
+
+      const reconstruir = (reconstruye)=>{
+        if(reconstruye<=767){
+          RR.innerHTML = `<table class="custom-table">
+                            <tbody>
+                              <tr>
+                                <th>Nosotros</th>
+                                <td>Nuestros inicios</td>
+                                <td>Etapas de desarrollo</td>
+                                <td>Nuestra filosofía</td>
+                                <td>Nuestros proyectos</td>
+                              </tr>
+                              <tr>
+                                <th>Proyectos</th>
+                                <td>Nuestro desarrollo</td>
+                                <td>Etapas del proyecto</td>
+                              </tr>
+                              <tr>
+                                <th>Blog</th>
+                                <td>Todo</td>
+                                <td>Nuevo</td>
+                                <td>Publicaciones</td>
+                              </tr>
+                            </tbody>
+                          </table>`
+        }
+      }
+    </script>
+</body>
+</html>
